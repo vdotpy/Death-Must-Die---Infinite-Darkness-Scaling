@@ -1,0 +1,82 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <AssemblyName>InfiniteDarkness</AssemblyName>
+    <Product>DMD Infinite Darkness Mod</Product>
+    <Version>1.0.0</Version>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>DMD.InfiniteDarkness</RootNamespace>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugType>embedded</DebugType>
+    <OutputPath>C:\Program Files (x86)\Steam\steamapps\common\Death Must Die\BepInEx\plugins\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugType>embedded</DebugType>
+    <OutputPath>C:\Program Files (x86)\Steam\steamapps\common\Death Must Die\BepInEx\plugins\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- BepInEx & Harmony Core -->
+    <Reference Include="BepInEx">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Death Must Die\BepInEx\core\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Death Must Die\BepInEx\core\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- Unity Core Assemblies -->
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Death Must Die\Death Must Die_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Death Must Die\Death Must Die_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Death Must Die\Death Must Die_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- Game Core Assemblies -->
+    <Reference Include="Claw.Core">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Death Must Die\Death Must Die_Data\Managed\Claw.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Death">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Death Must Die\Death Must Die_Data\Managed\death.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Death.Utils">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Death Must Die\Death_Data\Managed\Death.Utils.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UniTask">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Death Must Die\Death Must Die_Data\Managed\UniTask.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Claw.UserInterface">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Death Must Die\Death Must Die_Data\Managed\Claw.UserInterface.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    
+    <!-- TMPro formatting components -->
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Death Must Die\Death Must Die_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>
