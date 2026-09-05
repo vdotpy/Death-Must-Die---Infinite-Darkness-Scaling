@@ -18,7 +18,7 @@ I have certain changes planned to hopefully clean up the UI and fix some overlap
 ## 🛠️ Installation Instructions
 
 1. Ensure you have the latest version of **BepInEx 5** installed for *Death Must Die*.
-2. Download and open the `Infinite_Darkness_Scaling_v1.0.zip` archive file.
+2. Download and open the `InfiniteDarkness.dll` file from releases.
 3. Navigate to your main game directory and open the BepInEx Plugins folder. ie ".../Death Must Die/BepInEx/plugins/"
 4. Drag and drop the main mod file "InfiniteDarkness.dll" into that plugins folder.      
 5. Run the game, open the star crux menu, and ensure you are able to assign points beyond the default value.
